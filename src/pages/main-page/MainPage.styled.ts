@@ -98,6 +98,7 @@ export const ToMutant = styled.div`
     &.disabled {
         pointer-events: none;
         background-color: grey;
+        color: black;
     }
 `;
 
@@ -116,5 +117,6 @@ export const ToSpeed = styled.div`
     &.disabled {
         pointer-events: none;
         background-color: grey;
+        color: black;
     }
 `;

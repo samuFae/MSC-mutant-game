@@ -65,11 +65,11 @@ export const MainPage: React.FC = () => {
       <ModeSwitcherWrapper style={goToGame ? { left: "0px" } : {}}>
         <ToMutant onClick={() => { setGameMode("mutant") }}
           className={(buttonsDisabled ? " disabled" : "") + (notAllowed ? " disabled" : "")}>
-          {(gameMode === "speed" ? switchButtonLabels[1] : switchButtonLabels[0]) + "Mutant mode"}
+          {(gameMode === "speed" ? switchButtonLabels[1] : switchButtonLabels[0]) + "Mutant mode!"}
         </ToMutant>
         <ToSpeed onClick={() => { setGameMode("speed") }}
           className={(buttonsDisabled ? " disabled" : "")}>
-          {(gameMode === "speed" ? switchButtonLabels[0] : switchButtonLabels[1]) + "Speed mode"}
+          {(gameMode === "speed" ? switchButtonLabels[0] : switchButtonLabels[1]) + "Speed mode!"}
         </ToSpeed>
       </ModeSwitcherWrapper>
     </GlobalWrapper>
