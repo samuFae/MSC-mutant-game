@@ -21,7 +21,7 @@ export const MainPage: React.FC = () => {
   const goToSpeedGame = () => {
     setGoToGame(true);
     window.scrollTo({
-      top: 380,
+      top: 300,
       left: 0,
       behavior: 'smooth'
     })
@@ -31,7 +31,7 @@ export const MainPage: React.FC = () => {
     setGameMode("mutant");
     setGoToGame(true);
     window.scrollTo({
-      top: 380,
+      top: 300,
       left: 0,
       behavior: 'smooth'
     })
