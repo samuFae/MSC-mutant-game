@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/msc.main.chunk.css",
+    "main.js": "/static/js/msc.main.chunk.js",
+    "main.js.map": "/static/js/msc.main.chunk.js.map",
+    "runtime.js": "/msc.js",
+    "runtime.js.map": "/msc.js.map",
+    "index.html": "/index.html",
+    "static/css/msc.main.chunk.css.map": "/static/css/msc.main.chunk.css.map",
+    "static/js/msc.main.chunk.js.LICENSE.txt": "/static/js/msc.main.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/AvenirNextLTPro-UltLt.f81fc902.ttf"
+  },
+  "entrypoints": [
+    "msc.js",
+    "static/css/msc.main.chunk.css",
+    "static/js/msc.main.chunk.js"
+  ]
+}

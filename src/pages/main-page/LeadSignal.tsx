@@ -45,7 +45,7 @@ export const LeadSignal: React.FC<ILeadSignal> = ({ gameIsGoing, activeShiba, se
     switch (selectedOption.lookFor) {
         case 1: return (
             <SignalBox style={{
-                backgroundImage: `url("shibas/shiba-${activeShiba}.png")`
+                backgroundImage: `url("shibas/SHIBA-${activeShiba}.png")`
             }}>
             </SignalBox>
         );
