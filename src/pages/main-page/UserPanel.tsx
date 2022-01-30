@@ -1,5 +1,5 @@
 import React from "react";
-import { UserBox, ShibasList, ShibaItem } from "./MemoryGame.styled";
+import { UserBox, ShibasList, ShibaItem } from "./ShibaGame.styled";
 
 interface IUserPanel {
     activeShiba: number;

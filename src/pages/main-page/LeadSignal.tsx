@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { SignalBox } from "./MemoryGame.styled";
+import { SignalBox } from "./ShibaGame.styled";
 
 interface ILeadSignal {
     gameIsGoing: boolean;

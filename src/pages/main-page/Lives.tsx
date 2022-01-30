@@ -1,5 +1,5 @@
 import React from "react";
-import { Life, LivesWrapper } from "./MemoryGame.styled";
+import { Life, LivesWrapper } from "./ShibaGame.styled";
 
 interface ILives {
     lives: number;

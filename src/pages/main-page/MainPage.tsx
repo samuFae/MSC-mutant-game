@@ -13,7 +13,7 @@ export const MainPage: React.FC = () => {
 
   useEffect(() => {
     //@ts-ignore
-    if (localStorage.getItem("highScore") !== null && parseInt(localStorage.getItem("highScore")) > 1500) {
+    if (localStorage.getItem("highScore") !== null && parseInt(localStorage.getItem("highScore")) > 1400) {
       setNotAllowed(false);
     }
   }, [buttonsDisabled])

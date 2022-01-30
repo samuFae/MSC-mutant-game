@@ -1,7 +1,7 @@
 import { GamemodeType } from "./MainPage";
 import React, { useState, useEffect } from "react";
 import LeadSignal from "./LeadSignal";
-import { GameWrapper, Score, Rules, RulesTitle, RulesContent, RulesWrapper, CheckboxForLater, RulesButton, Countdown, TryAgain, TryAgainwrapper, HighScore } from "./MemoryGame.styled";
+import { GameWrapper, Score, Rules, RulesTitle, RulesContent, RulesWrapper, CheckboxForLater, RulesButton, Countdown, TryAgain, TryAgainwrapper, HighScore } from "./ShibaGame.styled";
 import UserPanel from "./UserPanel";
 import Lives from "./Lives";
 
@@ -46,8 +46,8 @@ export const ShibaGame: React.FC<IMemoryGame> = ({ goToGame, gameMode, toggleBut
     let countdownTimerI = countdownTimer;
     const tryAgainOptions = ['"Want to try again?"', '"Now i got it"', '"Now I really got it"', '"This was a bug!!"', '"Ok, last one"', '"Last last one"', '"Next one will be my best one"', '"High score?"'];
     const rulesText = {
-        speed: "Welcome to the Mutant Shiba Club game, if you want to win whatever happens in the little box you have to copy it in the bigger box. <br />For example if in the little box there is the WAGMI shiba, you have to click it in the bigger box, you have 3 lives to work with!<br />But be careful there could be something more if you want to try the mutant mode!",
-        mutant: "You think you got the hang of the game, watch and click, watch and click, thst's easy right? <br>Mutant mode is something different, i won't tell you anything so you can experience yourself every new feature.<br>I bet I can surprise you, ping me later on Discord to let me know if I won the bet."
+        speed: "Welcome to the Mutant Shiba Club game, if you want to win whatever happens in the little box you have to copy it in the bigger box. <br />For example if in the little box there is the WAGMI shiba, you have to click it in the bigger box, you only have 3 lives to work with!<br />But be careful there could be something more if you want to try the mutant mode!<br>And remember that if you're struggling beating the game imagine the struggle I went through coding it :).",
+        mutant: "You think you got the hang of the game, watch and click, watch and click, thst's easy right? <br>Mutant mode is something different, i won't tell you anything so you can experience yourself every new feature!<br>I bet I can surprise you, ping me later on Discord to let me know if I won the bet."
     }
 
     useEffect(() => {
@@ -75,9 +75,9 @@ export const ShibaGame: React.FC<IMemoryGame> = ({ goToGame, gameMode, toggleBut
         setTryAgain(false);
         setScore(0);
         if (gameMode === "mutant") {
-            setSwitchingInterval(2500);
-        } else {
-            setSwitchingInterval(1800);
+             setSwitchingInterval(3000);
+         } else {
+             setSwitchingInterval(2500);
         }
     }, [gameMode])
 
@@ -128,7 +128,7 @@ export const ShibaGame: React.FC<IMemoryGame> = ({ goToGame, gameMode, toggleBut
             }
             if (switchingInterval > 500 && !fromSwitch) {
                 if (((score / 100) % 5) === 0) {
-                    setSwitchingInterval(switchingInterval - 100)
+                    setSwitchingInterval(switchingInterval - 120)
                 }
             }
         }
@@ -175,7 +175,7 @@ export const ShibaGame: React.FC<IMemoryGame> = ({ goToGame, gameMode, toggleBut
         if (switchingInterval > 500) {
             if (((score / 100) % 5) === 0) {
                 console.log("interval", switchingInterval);
-                setSwitchingInterval(switchingInterval - 85)
+                setSwitchingInterval(switchingInterval - 100)
             }
         }
     }
